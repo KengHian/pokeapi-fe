@@ -42,13 +42,27 @@ Unfortunately, I didn't manage to write any meaningful tests before submission.
 
 ## Assumptions / Challenges
 Design decisions or limitations
-* To complete design, development and testing within 1-2 days is definately challenging for me
-* Adding pokemon to team
-    * I didn't manage to add search/filter functinality to Selection Panel
-* Analysis
-    * Currently, types analysis is done by treating each type as "one pokemon"
-    * Realistically, types analysis shoud be performed on each pokemon with consideration on how all its types affect each other (for example, a pokemon with types that cancel the weaknesses of each other)
-* Code quality
-    * Need more time to refactor after completing a MVP
-    * CSS/Style not yet consolidated
+* Design Decisions
+    * Analysis heuristic
+        * Stat/Role Analysis
+            * Any pokemons with Attack/SpecialAttack about 1.1 times higher than its average stat will be consider attaker of that type
+            * Else they will be consider Defensive Pokemon
+            * If half the team has speed near the average speed (between 75% and 125% of the average), I recommend to have a team with more diverse speed
+        * Types Analysis
+            * Add all types of a team to a set and analyse them seperately (its limitation highligted under challenges)
+            * Any types that no types from team can resist is considered "Defensive Weakness"
+            * Any types that no types from team can be effective is considered "Offensive Weakness"
+            * Any types that any types from team can be effective is considered "Offensive Strength"
+* Challenges
+    * To complete design, development and testing within 1-2 days is definately challenging for me
+    * Adding pokemon to team
+        * I didn't manage to add search/filter functinality to Selection Panel
+    * Analysis
+        * Currently, types analysis is done by treating each type as "one pokemon"
+        * Realistically, types analysis shoud be performed on each pokemon with consideration on how all its types affect each other (for example, a pokemon with types that cancel the weaknesses of each other)
+    * UX
+        * Yet to implement relevant loading element to all asyn component
+    * Code quality
+        * Need more time to refactor after completing a MVP
+        * CSS/Style not yet consolidated
 
