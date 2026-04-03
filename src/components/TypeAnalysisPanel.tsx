@@ -132,7 +132,7 @@ function TypeAnalysisPanel({team} : Props) {
     function displayTypes(title: string, types: string[]) {
         return (
             <Stack>
-            <Typography>{title}</Typography>
+            <Typography variant="h6">{title}</Typography>
             {numberOfPokemon == 0
             ? <Typography color="info">Add some pokemon!</Typography>
             : <Grid container spacing={1} columns={{ xs: 4, sm: 6, md: 8, lg: 14}}>
