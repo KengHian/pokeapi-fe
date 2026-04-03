@@ -1,6 +1,8 @@
 # Pokémon Team Builder
 This frontend is built via React with Vite, calling [PokeAPI](https://pokeapi.co/) as the backend. 
 
+For convenience, here is the [link](https://kenghian.github.io/pokeapi-fe/) to the GitHub Page. 
+
 It allows users to add up to six Pokemon in a team, which includes a breif summary of each Pokemons' information. After which, there will be anaylsis performed on the team to identify streangths and weaknesses of the team from the perspective of Types and Stats. 
 
 ## Overview
